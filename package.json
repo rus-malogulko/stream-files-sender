@@ -1,0 +1,17 @@
+{
+  "name": "streams",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client": "nodemon ./client.js",
+    "server": "nodemon ./server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.15",
+    "zlib": "^1.0.5"
+  },
+  "type": "module"
+}

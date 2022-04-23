@@ -1,6 +1,6 @@
 # stream-files-sender
 
-The purpose of this repo to show the simplicity of stream approach.
+The purpose of this repo to show the simplicity of stream approach over http protocol.
 
 ## Background
 
@@ -11,15 +11,16 @@ Also, streams are everywhere once you deal with `req` and `res` objects. Also `d
 
 To run server which accepts streamed file request
 
-```js
-npm run server
+```sh
+mkdir server_files && docker-compose up
 ```
 
 To run client which accepts two additional params (filename and host)
 
-```js
-npm run client -- <file_name> <host_name>
+```sh
+mkdir client_files && touch test.txt #create test example content to be sent by `client` script
+npm run client -- test.txt localhost #actual file sending over http
 ```
 where
-- `file_name` the file name withing `client_files` library
-- `host_name` might be a `localhost` in your local environment
+- `test.txt` - the file name within `client_files` folder
+- `localhost` - current hostname in your local environment

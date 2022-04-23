@@ -1,0 +1,9 @@
+services:
+  server:
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./server_files:/usr/src/app/server_files
+    build:
+      context: .
+      dockerfile: ./Dockerfile_server
